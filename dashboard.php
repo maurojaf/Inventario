@@ -1,6 +1,6 @@
 <?php 
 require_once 'includes/header.php'; 
-date_default_timezone_set('America/Santiago'); //puedes cambiar Guayaquil por tu Ciudad
+date_default_timezone_set('America/Santiago'); //puedes cambiar la ciudad
 setlocale(LC_TIME, 'spanish');
 $fecha=strftime("%A, %d de %B de %Y");
 ?>
@@ -53,7 +53,7 @@ $connect->close();
 
 <div class="row">
 	
-	<div class="col-md-4">
+	<div class="col-md-6">
 		<div class="panel panel-success">
 			<div class="panel-heading">
 				
@@ -66,7 +66,7 @@ $connect->close();
 		</div> <!--/panel-->
 	</div> <!--/col-md-4-->
 
-		<div class="col-md-4">
+		<!-- <div class="col-md-4">
 			<div class="panel panel-info">
 			<div class="panel-heading">
 				<a href="orders.php?o=manord" style="text-decoration:none;color:black;">
@@ -75,10 +75,10 @@ $connect->close();
 				</a>
 					
 			</div> <!--/panel-hdeaing-->
-		</div> <!--/panel-->
-		</div> <!--/col-md-4-->
+		<!--</div> <!--/panel-->
+		<!--</div> /col-md-4 -->
 
-	<div class="col-md-4">
+	<div class="col-md-6">
 		<div class="panel panel-danger">
 			<div class="panel-heading">
 				<a href="product.php" style="text-decoration:none;color:black;" data-toggle="tooltip" title="Stock menor a <?php echo $CantidadStock; ?> por producto.">
@@ -96,33 +96,33 @@ $connect->close();
 	<div class="col-md-4">
 
 			
-		<div class="panel panel-warning">
+		<!-- <div class="panel panel-warning">
 			<div class="panel-heading">
 				
 				<a href="product.php" style="text-decoration:none;color:black;" data-toggle="tooltip" title="Productos a expirar en <?php echo $Dias ?> dias.">
 					Productos pronto a expirar
 					<span class="badge pull pull-right"><?php echo $countStockExpire; ?></span>	
-				</a>
+				</a> -->
 				
-			</div> <!--/panel-hdeaing-->
-		</div> <!--/panel-->
+			<!-- </div> /panel-hdeaing -->
+		<!-- </div> /panel -->
 	
 
-		<div class="card">
-		  <div class="cardHeader" style="background-color:#777799;" data-toggle="tooltip" >
+		<!-- <div class="card">
+		  	<div class="cardHeader" style="background-color:#777799;" data-toggle="tooltip" >
 		    
 			<!--<div id="piechart" style="width: 340px; height: 200px;"></div>-->
 			<!--Div that will hold the dashboard-->
-		    <div id="dashboard_div" style="border: 1px solid #ccc">
+		<!--     <div id="dashboard_div" style="border: 1px solid #ccc"> -->
 		      <!--Divs that will hold each control and chart-->
-		      <div id="filter_div" style="font: 16px/24px Roboto,sans-serif"></div>
+		<!--       <div id="filter_div" style="font: 16px/24px Roboto,sans-serif"></div>
 		      <div id="chart_div"></div>
-		    </div>
+			</div>	
 			
 			
 
 		  </div>
-		</div> 
+		</div>  -->
 
 
 
@@ -158,15 +158,14 @@ $connect->close();
 
 	</div>
 
-	<div class="col-md-8">
+	<!-- <div class="col-md-8">
 		<div class="panel panel-default">
 			<div class="panel-heading"> <i class="glyphicon glyphicon-calendar"></i> Calendario</div>
 			<div class="panel-body">
 				<div id="calendar"></div>
 			</div>	
-		</div>
-		
-	</div>
+		</div>		
+	</div> -->
 
 	
 </div> <!--/row-->
